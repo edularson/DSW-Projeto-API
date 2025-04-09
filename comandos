@@ -1,0 +1,33 @@
+node -v
+
+npm init -y 
+
+npm i typescript
+
+npm i ts-node-dev
+
+npm i -D @types/node
+
+npm i --save-dev tsconfig-paths
+
+tsc --init
+
+npm i
+
+sudo npm i express
+
+sudo npm i cors
+
+sudo npm i express-async-errors --force
+
+sudo npm i -D @types/express --force
+
+sudo npm i -D @types/cors --force
+
+sudo npm i typeorm@0.2.45 --force
+
+sudo npm i reflect-metadata pg --force
+
+sudo docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+sudo npm run typeorm migration:run
