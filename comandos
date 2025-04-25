@@ -30,4 +30,6 @@ sudo npm i reflect-metadata pg --force
 
 sudo docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
-sudo npm run typeorm migration:run
+npm run typeorm migration:run
+
+npm run typeorm migration:create -- -n CreateProducts
