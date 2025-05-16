@@ -33,3 +33,35 @@ sudo docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d post
 npm run typeorm migration:run
 
 npm run typeorm migration:create -- -n CreateProducts
+
+sudo npm i express@4.18.2 --force
+
+sudo npm i celebrate
+
+sudo npm i -D @types/joi
+
+npm run typeorm migration:create -- -n CreateUsers
+
+npm run typeorm migration:run
+
+sudo npm i bcryptjs
+
+sudo npm i -D @types/bcryptjs
+
+sudo npm i jsonwebtoken
+
+sudo npm i -D @types/jsonwebtoken
+
+sudo npm i multer
+
+sudo npm i -D @types/multer
+
+npm run typeorm migrations:create -- -n CreateUserTokens
+
+npm run typeorm migration:run
+
+sudo npm i date-fns
+
+sudo npm i nodemailer
+
+sudo npm i -D @types/nodemailer
