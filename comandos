@@ -65,3 +65,29 @@ sudo npm i date-fns
 sudo npm i nodemailer
 
 sudo npm i -D @types/nodemailer
+
+sudo npm i handlebars
+
+npm run typeorm migrations:create -- -n CreateCustomers
+
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n CreateOrders
+
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddCustomerIdToOrders
+
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n CreateOrdersProducts
+
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddOrderIdToOrdersProduct
+
+npm run typeorm migration:run
+
+npm run typeorm migrations:create -- -n AddProductIdToOrdersProduct
+
+npm run typeorm migration:run
